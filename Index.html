@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Sumit Pathak | Content Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #161b22;
+            --primary-accent: #00ff88; /* Neon Green */
+            --secondary-accent: #7000ff; /* Purple */
+            --text-main: #ffffff;
+            --text-dim: #a1a1a1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 14, 20, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ffffff10;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--primary-accent);
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at center, #1a2332 0%, #0b0e14 70%);
+        }
+
+        h1 { font-size: 4rem; margin-bottom: 1rem; }
+        .hero-tagline { font-size: 1.2rem; color: var(--text-dim); margin-bottom: 2rem; }
+        
+        .btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary-accent);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 20px var(--primary-accent);
+            transform: translateY(-3px);
+        }
+
+        /* Portfolio Sections */
+        section { padding: 80px 10%; }
+        h2 { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; color: var(--primary-accent); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #ffffff05;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary-accent);
+            transform: scale(1.02);
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            background: #ffffff10;
+            padding: 4px 10px;
+            border-radius: 5px;
+            color: var(--primary-accent);
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 50px;
+            background: #06080c;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover { color: var(--primary-accent); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DIGITAL SUMIT</div>
+        <a href="https://instagram.com/digitalsumitpathak" class="btn btn-primary" target="_blank">Let's Talk</a>
+    </nav>
+
+    <header>
+        <span class="tag">SEO & Content Specialist</span>
+        <h1>Digital Sumit Pathak</h1>
+        <p class="hero-tagline">Creating content that people can't scroll past.</p>
+        <a href="#work" class="btn btn-primary">View My Portfolio</a>
+    </header>
+
+    <section id="work">
+        <h2>Featured Samples</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Viral Reels</span>
+                <h3 style="margin-top:1rem">Mahadev Emotional Script</h3>
+                <p style="color:var(--text-dim); margin: 1rem 0;">A viral script optimized for retention with a high-impact emotional hook.</p>
+                <blockquote style="border-left: 2px solid var(--primary-accent); padding-left: 10px; font-style: italic;">
+                    "Jab sabne tumhe ignore kiya hoga..."
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <span class="tag">YouTube SEO</span>
+                <h3 style="margin-top:1rem">CTR Optimization</h3>
+                <p style="color:var(--text-dim); margin: 1rem 0;">Thumbnail design & titling strategy for "AI SEO Future 2026".</p>
+                <ul style="list-style: none; font-size: 0.9rem;">
+                    <li>✅ Bold Yellow Typography</li>
+                    <li>✅ Psychological Triggers</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="tag">Content Strategy</span>
+                <h3 style="margin-top:1rem">30-Day Growth Plan</h3>
+                <p style="color:var(--text-dim); margin: 1rem 0;">Data-driven Instagram blueprint focusing on organic reach and niche authority.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #0f141b;">
+        <h2>My Services</h2>
+        <div class="grid" style="text-align: center;">
+            <div>
+                <i class="fas fa-pen-nib" style="font-size: 2rem; color: var(--primary-accent);"></i>
+                <h3>Script Writing</h3>
+            </div>
+            <div>
+                <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-accent);"></i>
+                <h3>Instagram Growth</h3>
+            </div>
+            <div>
+                <i class="fas fa-search" style="font-size: 2rem; color: var(--primary-accent);"></i>
+                <h3>SEO Blogging</h3>
+            </div>
+            <div>
+                <i class="fas fa-paint-brush" style="font-size: 2rem; color: var(--primary-accent);"></i>
+                <h3>Thumbnail Design</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 1.5rem;">Ready to dominate the algorithm?</p>
+        <div class="social-links">
+            <a href="https://instagram.com/digitalsumitpathak" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-dim);">© 2026 Digital Sumit Pathak. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
